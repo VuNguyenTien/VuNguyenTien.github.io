@@ -3,22 +3,6 @@
 <script src="https://apis.google.com/js/platform.js" async defer></script>
 
 <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
-    <script>
-      function onSignIn(googleUser) {
-        // Useful data for your client-side scripts:
-        var profile = googleUser.getBasicProfile();
-        alert("ID: " + profile.getId()); // Don't send this directly to your server!
-        alert('Full Name: ' + profile.getName());
-        alert('Given Name: ' + profile.getGivenName());
-        alert('Family Name: ' + profile.getFamilyName());
-        alert("Image URL: " + profile.getImageUrl());
-        alert("Email: " + profile.getEmail());
-
-        // The ID token you need to pass to your backend:
-        var id_token = googleUser.getAuthResponse().id_token;
-        alert("ID Token: " + id_token);
-      };
-    </script>
 
 
 
@@ -1303,5 +1287,19 @@ if ( 'object' === typeof wpcom_mobile_user_agent_info ) {
 	}
 	
 }
+function onSignIn(googleUser) {
+        // Useful data for your client-side scripts:
+        var profile = googleUser.getBasicProfile();
+        alert("ID: " + profile.getId()); // Don't send this directly to your server!
+        alert('Full Name: ' + profile.getName());
+        alert('Given Name: ' + profile.getGivenName());
+        alert('Family Name: ' + profile.getFamilyName());
+        alert("Image URL: " + profile.getImageUrl());
+        alert("Email: " + profile.getEmail());
+
+        // The ID token you need to pass to your backend:
+        var id_token = googleUser.getAuthResponse().id_token;
+        alert("ID Token: " + id_token);
+      };
 </script>
 <div class="comment-likes-overlay" style="display: none;"></div><img src="https://pixel.wp.com/g.gif?blog=81976675&amp;v=wpcom&amp;tz=7&amp;user_id=0&amp;post=3555&amp;subd=toidicodedao&amp;host=toidicodedao.com&amp;ref=https%3A%2F%2Ftoidicodedao.com%2Ftag%2Fseries-nhan-dien-idol%2F&amp;rand=0.7107308930880698" alt=":)" id="wpstats"><iframe height="0" width="0" name="automattic-passback-receiver" src="//s.pubmine.com/passback.html#https://toidicodedao.com" style="position: absolute; left: -1000px; top: -1000px; border: 0px solid; width: 0px; height: 0px;"></iframe><iframe scrolling="no" frameborder="0" src="https://sync.teads.tv/iframe?pid=25030&amp;userId=dc96bdf3-58a3-4910-8841-ec75c0813284&amp;1488340413925" style="margin: 0px; padding: 0px; width: 0px; height: 0px; border: 0px; overflow: hidden; display: none;"></iframe><div class="corom-element" style="position: absolute; top: 0px; left: 0px; right: 0px; height: 0px; margin: 0px; text-align: left; z-index: 2147483647; pointer-events: none; border: none;"></div></body>
