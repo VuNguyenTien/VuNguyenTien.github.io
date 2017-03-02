@@ -1,3 +1,29 @@
+<meta name="google-signin-scope" content="profile email">
+<meta name="google-signin-client_id" content="917478473326-9ktuoio4mkem8t3k2im4a3t3eb7t3df8.apps.googleusercontent.com">
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+
+<div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
+    <script>
+      function onSignIn(googleUser) {
+        // Useful data for your client-side scripts:
+        var profile = googleUser.getBasicProfile();
+        alert("ID: " + profile.getId()); // Don't send this directly to your server!
+        alert('Full Name: ' + profile.getName());
+        alert('Given Name: ' + profile.getGivenName());
+        alert('Family Name: ' + profile.getFamilyName());
+        alert("Image URL: " + profile.getImageUrl());
+        alert("Email: " + profile.getEmail());
+
+        // The ID token you need to pass to your backend:
+        var id_token = googleUser.getAuthResponse().id_token;
+        alert("ID Token: " + id_token);
+      };
+    </script>
+
+
+
+
+
 <body class="single single-post postid-3555 single-format-standard custom-background mp6 customizer-styles-applied masthead-fixed singular highlander-enabled highlander-light">
 <div id="page" class="hfeed site">
 	
